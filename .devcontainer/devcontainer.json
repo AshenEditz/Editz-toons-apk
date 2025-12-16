@@ -1,0 +1,21 @@
+{
+  "name": "Android Development",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "features": {
+    "ghcr.io/devcontainers/features/android-sdk:1": {
+      "version": "33",
+      "cmdLineToolsVersion": "latest",
+      "buildTools": "33.0.0",
+      "platformTools": true
+    }
+  },
+  "postCreateCommand": "chmod +x gradlew && ./gradlew build",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "naco-siren.gradle-language"
+      ]
+    }
+  }
+}
